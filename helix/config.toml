@@ -1,0 +1,65 @@
+theme = "gruvbox"
+
+[editor]
+scrolloff = 3
+mouse = true
+middle-click-paste = true
+scroll-lines = 3
+shell = ["zsh", "-c"]
+line-number = "relative"
+cursorline = true
+gutters = ["diagnostics", "line-numbers"]
+auto-completion = true
+auto-format = true
+idle-timeout = 400
+completion-trigger-len = 2
+auto-info = true
+true-color = true
+rulers = []
+color-modes = false
+
+[editor.statusline]
+left = ["file-name"]
+center = ["mode", "spinner"]
+right = ["diagnostics", "selections", "position", "file-encoding", "file-line-ending", "file-type"]
+separator = "│"
+
+[editor.lsp]
+display-messages = true
+auto-signature-help = true
+display-signature-help-docs = true
+
+[editor.cursor-shape]
+insert = "bar"
+normal = "block"
+select = "underline"
+
+[editor.file-picker]
+hidden = true
+parents = true
+ignore = true
+git-ignore = true
+git-global = true
+git-exclude = true
+max-depth = 0
+
+[editor.search]
+smart-case = true
+wrap-around = true
+
+[editor.whitespace.render]
+space = "all"
+tab = "all"
+newline = "all"
+
+[editor.whitespace.characters]
+space = "·"
+nbsp = "⍽"
+tab = "→"
+newline = "⏎"
+tabpad = "·" # Tabs will look like "→···" (depending on tab width)
+
+[editor.indent-guides]
+render = true
+character = "│"
+
